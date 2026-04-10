@@ -85,6 +85,11 @@ low retention problem identified
 - 6 Charts — line, bar, donut, horizontal bar, map
 
 **Key Metrics:**
+Total Revenue     → 15.84M
+Total Orders      → 99,441
+Avg Delivery Days → 12.09
+Cancelled Orders  → 625
+
 ---
 
 ## 🏗️ Architecture
@@ -126,3 +131,64 @@ ecommerce-data-pipeline/
 │
 ├── dashboard/
 │   └── Ecommerce_Dashboard.pbix ← Power BI dashboard
+
+
+---
+
+## 💡 Key Business Insights
+
+1. **SP dominates** — Sao Paulo generates 5.2M (33% of total revenue)
+2. **Delivery gap** — Remote states face 3x longer delivery times
+3. **Low retention** — 90%+ customers never return after first purchase
+4. **Peak season** — May and November show highest revenue spikes
+5. **97% success** — 97% of orders are successfully delivered
+
+---
+
+## 🚀 How to Run
+
+### 1. Clone the repo
+```bash
+git clone https://github.com/yourusername/ecommerce-data-pipeline
+```
+
+### 2. Install dependencies
+```bash
+pip install pandas sqlalchemy pymysql
+```
+
+### 3. Download dataset
+👉 https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
+
+### 4. Setup MySQL
+```sql
+CREATE DATABASE ecommerce_project;
+```
+
+### 5. Run the notebook
+
+Open notebooks/SQL_Project_Cleaning.ipynb
+Update MySQL password in create_engine()
+Run all cells
+
+### 6. Open Dashboard
+Open dashboard/Ecommerce_Dashboard.pbix in Power BI Desktop
+Refresh data connection
+
+---
+
+## 📸 Dashboard Preview
+
+![Dashboard](dashboard/preview.png)
+
+---
+
+## 🙋 Author
+
+**Kaustubh Gupta**
+- LinkedIn: https://www.linkedin.com/in/kaustubh-gupta-498b7a273/
+- GitHub: https://github.com/Kaustubhgupta28
+
+---
+
+⭐ If you found this useful, please star the repo!
